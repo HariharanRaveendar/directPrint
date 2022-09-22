@@ -1,0 +1,320 @@
+<html>
+<!-- <link rel="stylesheet" href="../../dist/print.css" type="text/css"> -->
+
+<link rel="stylesheet" href="./print.min.css" type="text/css">
+<script src="./print.min.js"></script>
+<!-- <script src='../../dist/print.js'></script> -->
+<script type="text/javascript">
+  data = `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cjJTBavcbQzWtqQsXmx0TOo6RloKhxHF43ASsgRr/wA1JhMbCmVuZHN0cmVhbQplbmRvYmoKMyAwIG9iagoyNDcyCmVuZG9iago0IDAgb2JqClsvSUNDQmFzZWQgMiAwIFJdCmVuZG9iago1IDAgb2JqCjw8CiAgL1R5cGUgL01ldGFkYXRhCiAgL1N1YnR5cGUgL1hNTAogIC9MZW5ndGggNiAwIFIKPj4Kc3RyZWFtCjw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+PHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyI+CiAgIDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CiAgICAgIDxyZGY6RGVzY3JpcHRpb24geG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiByZGY6YWJvdXQ9IiI+CiAgICAgICAgIDxkYzpmb3JtYXQ+YXBwbGljYXRpb24vcGRmPC9kYzpmb3JtYXQ+CiAgICAgICAgIDxkYzpsYW5ndWFnZT54LXVua25vd248L2RjOmxhbmd1YWdlPgogICAgICAgICA8ZGM6ZGF0ZT4yMDIyLTA5LTIyVDE2OjE2OjQyKzA1OjMwPC9kYzpkYXRlPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiB4bWxuczpwZGY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGRmLzEuMy8iIHJkZjphYm91dD0iIj4KICAgICAgICAgPHBkZjpQcm9kdWNlcj5BcGFjaGUgRk9QIFZlcnNpb24gU1ZOIGJyYW5jaGVzL2ZvcC0yXzcvZm9wLWNvcmU8L3BkZjpQcm9kdWNlcj4KICAgICAgICAgPHBkZjpQREZWZXJzaW9uPjEuNDwvcGRmOlBERlZlcnNpb24+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgcmRmOmFib3V0PSIiPgogICAgICAgICA8eG1wOkNyZWF0b3JUb29sPkFwYWNoZSBGT1AgVmVyc2lvbiBTVk4gYnJhbmNoZXMvZm9wLTJfNy9mb3AtY29yZTwveG1wOkNyZWF0b3JUb29sPgogICAgICAgICA8eG1wOk1ldGFkYXRhRGF0ZT4yMDIyLTA5LTIyVDE2OjE2OjQyKzA1OjMwPC94bXA6TWV0YWRhdGFEYXRlPgogICAgICAgICA8eG1wOkNyZWF0ZURhdGU+MjAyMi0wOS0yMlQxNjoxNjo0MiswNTozMDwveG1wOkNyZWF0ZURhdGU+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+CgplbmRzdHJlYW0KZW5kb2JqCjYgMCBvYmoKMTAzMgplbmRvYmoKNyAwIG9iago8PCAvTGVuZ3RoIDggMCBSIC9GaWx0ZXIgL0ZsYXRlRGVjb2RlID4+CnN0cmVhbQp4nJWTQQuCMBSA7/sV71iH1jadaLcCPURIwm7RwVKX0Aqt/n8zKyZlNrbx4LF9+3iPVyEKRK9JE3yXYj/wYK9Q9cxTcDwddCbRuaSbdx5XCUi0EGgaUaAERNEhYs45IcShIBRsRlFZX64QpyqH2XgLYolCYTCZR7Hn+u2H/zJlJrM3yzTUh9mAVumnW/LFzo76Q4+5NqD14XzKIb6pXV4PGNqBs0Lq3ePY9vhfVKjS8jggZ0fMZNFbPw2zIM3lUGPteE3RTDOTyHmAWWBMjjE1PuGvKWse3QHkGrxSCmVuZHN0cmVhbQplbmRvYmoKOCAwIG9iagoyMjAKZW5kb2JqCjkgMCBvYmoKPDwKICAvUmVzb3VyY2VzIDEwIDAgUgogIC9UeXBlIC9QYWdlCiAgL01lZGlhQm94IFswIDAgNTk1LjI5NiA4NDEuODk2XQogIC9Dcm9wQm94IFswIDAgNTk1LjI5NiA4NDEuODk2XQogIC9CbGVlZEJveCBbMCAwIDU5NS4yOTYgODQxLjg5Nl0KICAvVHJpbUJveCBbMCAwIDU5NS4yOTYgODQxLjg5Nl0KICAvUGFyZW50IDExIDAgUgogIC9Db250ZW50cyA3IDAgUgo+PgplbmRvYmoKMTIgMCBvYmoKPDwKICAvVHlwZSAvRm9udAogIC9TdWJ0eXBlIC9UeXBlMQogIC9CYXNlRm9udCAvSGVsdmV0aWNhCiAgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcKPj4KZW5kb2JqCjExIDAgb2JqCjw8IC9UeXBlIC9QYWdlcwovQ291bnQgMQovS2lkcyBbOSAwIFIgXSA+PgplbmRvYmoKMTMgMCBvYmoKPDwKICAvVHlwZSAvQ2F0YWxvZwogIC9QYWdlcyAxMSAwIFIKICAvTGFuZyAoeC11bmtub3duKQogIC9NZXRhZGF0YSA1IDAgUgogIC9QYWdlTGFiZWxzIDE0IDAgUgo+PgplbmRvYmoKMTAgMCBvYmoKPDwKICAvRm9udCA8PCAvRjEgMTIgMCBSID4+CiAgL1Byb2NTZXQgWy9QREYgL0ltYWdlQiAvSW1hZ2VDIC9UZXh0XQogIC9Db2xvclNwYWNlIDw8IC9EZWZhdWx0UkdCIDQgMCBSID4+Cj4+CmVuZG9iagoxNCAwIG9iago8PCAvTnVtcyBbMCA8PCAvUyAvRCA+Pl0gPj4KZW5kb2JqCnhyZWYKMCAxNQowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwMTUgMDAwMDAgbiAKMDAwMDAwMDE5NyAwMDAwMCBuIAowMDAwMDAyNzU0IDAwMDAwIG4gCjAwMDAwMDI3NzQgMDAwMDAgbiAKMDAwMDAwMjgwNyAwMDAwMCBuIAowMDAwMDAzOTI4IDAwMDAwIG4gCjAwMDAwMDM5NDggMDAwMDAgbiAKMDAwMDAwNDI0MiAwMDAwMCBuIAowMDAwMDA0MjYxIDAwMDAwIG4gCjAwMDAwMDQ3NjQgMDAwMDAgbiAKMDAwMDAwNDU5MSAwMDAwMCBuIAowMDAwMDA0NDg1IDAwMDAwIG4gCjAwMDAwMDQ2NTAgMDAwMDAgbiAKMDAwMDAwNDg4OSAwMDAwMCBuIAp0cmFpbGVyCjw8CiAgL1Jvb3QgMTMgMCBSCiAgL0luZm8gMSAwIFIKICAvSUQgWzwyNDhCMkJBQ0E1RkU3MDRBMzYyNTM0OTcwODBBNDkyOD4gPDI0OEIyQkFDQTVGRTcwNEEzNjI1MzQ5NzA4MEE0OTI4Pl0KICAvU2l6ZSAxNQo+PgpzdGFydHhyZWYKNDkzMwolJUVPRgo=`
+  function printPdf() {
+    console.log("pdf")
+    printJS('/test.pdf')
+  }
+
+  function printPdfWithModal() {
+    printJS({
+      printable: '/test/manual/test.pdf',
+      type: 'pdf',
+      showModal: true,
+      base64: false,
+    })
+  }
+
+  function printPdfWithModalAndCloseCallback() {
+    printJS({
+      printable: '/test/manual/test.pdf',
+      type: 'pdf',
+      showModal: true,
+      onPrintDialogClose: () => alert('The print dialog was closed'),
+      onIncompatibleBrowser: () => console.log('Pdf was opened in a new tab due to an incompatible browser')
+    })
+  }
+
+  function printPdfBase64(data) {
+    printJS({
+      printable: data,
+      type: 'pdf',
+      base64: true,
+      origin: 'null'
+    })
+    // fetch('/test/manual/base64.txt').then(function (response) {
+    //   response.text().then(function (base64) {
+    //     printJS({
+    //       printable: base64,
+    //       type: 'pdf',
+    //       base64: true
+    //     })
+    //   })
+    // })
+  }
+
+  function printHtml() {
+    printJS({
+      printable: 'test',
+      type: 'html'
+    })
+  }
+
+  function printRawHtml() {
+    printJS({
+      printable: `<h1>Print.js Raw HTML Print Test</h1>
+        <p class="blueText">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+      type: 'raw-html',
+      style: '.blueText {color:blue;}'
+    })
+  }
+
+  function printHtmlCustomStyle() {
+    const style = '@page { margin-top: 400px } @media print { h1 { color: blue } }'
+
+    printJS({
+      printable: 'test',
+      type: 'html',
+      style: style,
+      scanStyles: false
+    })
+  }
+
+  function printHtmlCss() {
+    printJS({
+      printable: 'test',
+      type: 'html',
+      css: 'test.css',
+      scanStyles: false
+    })
+  }
+
+  function printJson() {
+    let data = []
+    for (let i = 0; i <= 1000; i++) {
+      data.push({
+        test1: createRandomString(),
+        test2: createRandomString()
+      })
+    }
+
+    printJS({
+      printable: data,
+      properties: [
+        {
+          field: 'test1',
+          displayName: 'test 1',
+          columnSize: 1
+        },
+        {
+          field: 'test2',
+          displayName: 'test 2',
+          columnSize: 4
+        }
+      ],
+      type: 'json',
+      header: 'JSON Print Test',
+      documentTitle: 'Print.js JSON Test'
+    })
+  }
+
+  function printStyledJson() {
+    let data = [
+      {
+        test1: 'Test1 string',
+        test2: 'Test2 string'
+      },
+      {
+        test1: 'more Test1 string',
+        test2: 'more Test2 string'
+      }
+    ]
+
+    printJS({
+      printable: data,
+      properties: ['test1', 'test2'],
+      type: 'json',
+      gridStyle: 'border: 2px solid #3971A5;',
+      gridHeaderStyle: 'color: red;  border: 2px solid #3971A5;',
+    })
+  }
+
+  function printNestedJson() {
+    let data = []
+    for (let i = 0; i <= 100; i++) {
+      data.push({
+        test1: createRandomString(),
+        test2: {
+          a: createRandomString()
+        }
+      })
+    }
+
+    printJS({
+      printable: data,
+      properties: [
+        {
+          field: 'test1',
+          displayName: 'test 1',
+          columnSize: 1
+        },
+        {
+          field: 'test2.a',
+          displayName: 'test 2 - a',
+          columnSize: 4
+        }
+      ],
+      type: 'json'
+    })
+  }
+
+  function createRandomString() {
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    for (var i = 0; i < 5; i++)
+      text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+    return text;
+  }
+
+  function printImage() {
+    printJS('test-01.jpg', 'image')
+  }
+
+  function printImages() {
+    printJS({
+      printable: [
+        'test-01.jpg',
+        'test-02.jpg'
+      ],
+      type: 'image'
+    })
+  }
+
+  function printStyledImages() {
+    printJS({
+      printable: [
+        'test-01.jpg',
+        'test-02.jpg'
+      ],
+      type: 'image',
+      style: 'img { max-width: 400px; margin: 30px; }'
+    })
+  }
+
+  function printStyledImagesWithStyleSheet() {
+    printJS({
+      printable: [
+        'test-01.jpg',
+        'test-02.jpg'
+      ],
+      type: 'image',
+      css: 'test.css',
+    })
+  }
+
+  function printExternalImages() {
+    printJS({
+      printable: [
+        'https://printjs.crabbly.com/images/print-01-highres.jpg',
+        'https://printjs.crabbly.com/images/print-02-highres.jpg',
+        'https://printjs.crabbly.com/images/print-03-highres.jpg'
+      ],
+      type: 'image',
+      showModal: true,
+      modalMessage: 'Printing...'
+    })
+  }
+</script>
+
+<body>
+  <section id="test" class="test">
+    <h1>Print.js Test Page</h1>
+    <p>
+      <button onClick='printPdf();'>
+        Print PDF
+      </button>
+      <button onClick='printPdfWithModal();'>
+        Print PDF with Loading Modal
+      </button>
+      <button onClick='printPdfWithModalAndCloseCallback();'>
+        Print PDF with Loading Modal and close callback
+      </button>
+      <button onClick='printPdfBase64(data);'>
+        Print base64 PDF
+      </button>
+    </p>
+    <p>
+      <button onClick='printHtml();'>
+        Print HTML
+      </button>
+      <button onClick='printHtmlCustomStyle();'>
+        Print HTML with custom style
+      </button>
+      <button onClick='printHtmlCss();'>
+        Print HTML with custom css
+      </button>
+      <button onClick='printRawHtml();'>
+        Print Raw HTML
+      </button>
+    </p>
+    <p>
+      <button onClick='printJson();'>
+        Print JSON
+      </button>
+      <button onClick='printStyledJson();'>
+        Print Styled JSON
+      </button>
+      <button onClick='printNestedJson();'>
+        Print Nested JSON
+      </button>
+    </p>
+    <p>
+      <button onClick='printImage();'>
+        Print Image
+      </button>
+      <button onClick='printImages();'>
+        Print Multiple Images
+      </button>
+      <button onClick='printStyledImages();'>
+        Print Multiple Images Passing Custom Style
+      </button>
+      <button onClick='printStyledImagesWithStyleSheet();'>
+        Print Multiple Images Passing a Style Sheet
+      </button>
+      <button onClick='printExternalImages();'>
+        Print Multiple External Images
+      </button>
+    </p>
+    <div>
+      <h2>Form Elements</h2>
+      <div>
+        <input type="checkbox" /> Checkbox Example
+      </div>
+      <div>
+        <input type="text" value="Styled text input content..." style="color: red; min-width: 300px;" />
+      </div>
+      <div>
+        <textarea>Text area content...</textarea>
+      </div>
+      <div>
+        <canvas id="myCanvas" width="200" height="50" style="border:2px solid blue;">
+          Your browser does not support the canvas element.
+        </canvas>
+
+        <script>
+          var canvas = document.getElementById("myCanvas");
+          var ctx = canvas.getContext("2d");
+          ctx.fillStyle = "#FF0000";
+          ctx.fillRect(0, 0, 150, 25);
+        </script>
+      </div>
+      <div>
+        <select>
+          <option value="super" selected>Super</option>
+          <option value="test">Test</option>
+          <option value="printjs">Print.js</option>
+        </select>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
